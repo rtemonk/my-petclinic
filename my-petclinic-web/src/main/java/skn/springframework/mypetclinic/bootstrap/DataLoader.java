@@ -6,16 +6,15 @@ import skn.springframework.mypetclinic.model.Owner;
 import skn.springframework.mypetclinic.model.Vet;
 import skn.springframework.mypetclinic.services.OwnerService;
 import skn.springframework.mypetclinic.services.VetService;
-import skn.springframework.mypetclinic.services.map.OwnerServiceMap;
-import skn.springframework.mypetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
     @Override
     public void run(String... args) throws Exception {
