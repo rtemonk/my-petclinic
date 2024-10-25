@@ -3,21 +3,34 @@ package skn.springframework.mypetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import skn.springframework.mypetclinic.model.Owner;
+import skn.springframework.mypetclinic.model.PetType;
 import skn.springframework.mypetclinic.model.Vet;
 import skn.springframework.mypetclinic.services.OwnerService;
+import skn.springframework.mypetclinic.services.PetTypeService;
 import skn.springframework.mypetclinic.services.VetService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    private final PetTypeService petTypeService;
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
 
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        dog.setName("Cat");
+        PetType savedCatPetType = petTypeService.save(cat);
+
         Owner owner1 = new Owner();
         owner1.setFirstName("Michael");
         owner1.setLastName("Weston");
