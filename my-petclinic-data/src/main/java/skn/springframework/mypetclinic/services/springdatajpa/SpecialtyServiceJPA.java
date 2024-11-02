@@ -32,13 +32,13 @@ public class SpecialtyServiceJPA implements SpecialtyService {
     }
 
     @Override
-    public Specialty save(Specialty obj) {
-        return specialtyRepository.save(obj);
+    public Specialty save(Specialty specialty) {
+        return specialtyRepository.save(specialty);
     }
 
     @Override
-    public void delete(Specialty obj) {
-        specialtyRepository.delete(obj);
+    public void delete(Specialty specialty) {
+        specialtyRepository.delete(specialty);
     }
 
     @Override

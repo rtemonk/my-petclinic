@@ -32,13 +32,13 @@ public class PetServiceJPA implements PetService {
     }
 
     @Override
-    public Pet save(Pet obj) {
-        return petRepository.save(obj);
+    public Pet save(Pet pet) {
+        return petRepository.save(pet);
     }
 
     @Override
-    public void delete(Pet obj) {
-        petRepository.delete(obj);
+    public void delete(Pet pet) {
+        petRepository.delete(pet);
     }
 
     @Override
