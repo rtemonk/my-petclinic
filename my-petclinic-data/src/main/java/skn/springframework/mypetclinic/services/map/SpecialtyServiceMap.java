@@ -5,6 +5,7 @@ import skn.springframework.mypetclinic.model.Specialty;
 import skn.springframework.mypetclinic.services.SpecialtyService;
 
 import java.util.Set;
+
 @Service
 public class SpecialtyServiceMap extends AbstractMapService<Specialty,Long> implements SpecialtyService {
 
@@ -19,13 +20,13 @@ public class SpecialtyServiceMap extends AbstractMapService<Specialty,Long> impl
     }
 
     @Override
-    public Specialty save(Specialty obj) {
-        return super.save(obj);
+    public Specialty save(Specialty specialty) {
+        return super.save(specialty);
     }
 
     @Override
-    public void delete(Specialty obj) {
-        super.delete(obj);
+    public void delete(Specialty specialty) {
+        super.delete(specialty);
     }
 
     @Override

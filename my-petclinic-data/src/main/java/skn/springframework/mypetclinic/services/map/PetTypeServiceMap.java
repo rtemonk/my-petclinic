@@ -20,13 +20,13 @@ public class PetTypeServiceMap extends AbstractMapService<PetType,Long> implemen
     }
 
     @Override
-    public PetType save(PetType obj) {
-        return super.save(obj);
+    public PetType save(PetType petType) {
+        return super.save(petType);
     }
 
     @Override
-    public void delete(PetType obj) {
-        super.delete(obj);
+    public void delete(PetType petType) {
+        super.delete(petType);
     }
 
     @Override
