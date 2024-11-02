@@ -39,13 +39,13 @@ public class OwnerServiceJPA implements OwnerService {
     }
 
     @Override
-    public Owner save(Owner object) {
-        return ownerRepository.save(object);
+    public Owner save(Owner obj) {
+        return ownerRepository.save(obj);
     }
 
     @Override
-    public void delete(Owner object) {
-        ownerRepository.delete(object);
+    public void delete(Owner obj) {
+        ownerRepository.delete(obj);
     }
 
     @Override

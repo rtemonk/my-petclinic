@@ -32,13 +32,13 @@ public class VetServiceJPA implements VetService {
     }
 
     @Override
-    public Vet save(Vet object) {
-        return vetRepository.save(object);
+    public Vet save(Vet obj) {
+        return vetRepository.save(obj);
     }
 
     @Override
-    public void delete(Vet object) {
-        vetRepository.delete(object);
+    public void delete(Vet obj) {
+        vetRepository.delete(obj);
     }
 
     @Override
