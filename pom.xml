@@ -14,7 +14,7 @@
     <name>my-petclinic</name>
     <description>my-petclinic</description>
     <url />
-    
+
     <modules>
         <module>my-petclinic-data</module>
         <module>my-petclinic-web</module>
@@ -55,7 +55,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/skn332/my-petclinic.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
