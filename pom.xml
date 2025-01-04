@@ -7,19 +7,12 @@
         <version>3.3.4</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    <groupId>skn.springframework</groupId>
+    <groupId>rtemonk.springframework</groupId>
     <artifactId>my-petclinic</artifactId>
     <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>my-petclinic</name>
-    <description>my-petclinic</description>
     <url />
-    <licenses>
-        <license />
-    </licenses>
-    <developers>
-        <developer />
-    </developers>
     <modules>
         <module>my-petclinic-data</module>
         <module>my-petclinic-web</module>
@@ -44,7 +37,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/nightsaken/my-petclinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/rtemonk/my-petclinic.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
